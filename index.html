@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+          <title>color picker</title>
+            </head>
+            <body>
+            	<input type="color" id="color" oninput="colexde.value = color.value" ></input><br>
+            	<input type="text" id="colexde"></input>
+            <button id="code" onclick="alert('copied')">Copy</button>
+            <script>
+             const colexde = document.getElementById("colexde");
+             const code = document.getElementById("code");
+             
+              code.onclick = function () {
+              	colexde.select();
+              
+                  document.execCommand("Copy");
+              };
+               </script>
+            </body>
+		</html>
